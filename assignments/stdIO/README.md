@@ -5,6 +5,6 @@ Program meets all requirements.
 Ran and tested the program several times, using various names, no name, numbers, special characters, escape characters, etc. No bugs found.
 
 Self-evaluated grade: 80%.
-Self-eval notes: I'm pretty sure I can make it smaller and/or faster. This program is a proof of concept that I can do it.
+Self-eval notes: I'm pretty sure I can make it smaller and/or faster. This program is a proof of concept that I can do it, not that this is the best possible way of doing it..
 
 TO-DO: N/A. Program is complete as is.
