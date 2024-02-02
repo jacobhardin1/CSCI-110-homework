@@ -1,5 +1,7 @@
 ## Jacob Hardin
 ## Assignment - Standard Input and Output
+## This program asks the user for their name, then gives them 4 cards.
+## The name can be any string; the program does not care.
 
 cardOne = r'''---------
 |A      |
