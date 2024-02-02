@@ -7,4 +7,4 @@ Ran and tested the program several times, using various names, no name, numbers,
 Self-evaluated grade: 80%.
 Self-eval notes: I'm pretty sure I can make it smaller and/or faster. This program is a proof of concept that I can do it.
 
-TO-DO: N/A. Program is complete.
+TO-DO: N/A. Program is complete as is.
