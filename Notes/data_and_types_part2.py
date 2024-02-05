@@ -26,3 +26,47 @@ print("This is the dec number of the hex number FD: ", int(0xFD))
 
 ## format(value, format_spec) = formats the given value using the format.
 
+print(format(11, 'b'))
+
+## chr(uniCode)
+## returns the unicode pointer where uniCode = integer pointer. eg:
+
+print(chr(65)) # prints the character A <- capital
+print(chr(606)) # prints the character ɞ 
+
+## Globals & Locals
+
+## id(object)
+## Returns the identity of the object. 
+
+x = 99
+y = 98
+
+print(id(x))
+print(id(y))
+
+## Everything is an object, according to Python
+
+## divmod(a, b)
+## given two non-complex numbers, returns a pair of numbers as tuple
+## consisting of quotient and remainder. uses integer division
+
+print(divmod(99, 4))
+
+time = 111
+print(divmod(time, 60))
+
+## When something calls something else, it uses last known object.
+
+c = 99
+d = divmod(c, 2)
+print(d)
+c = 22
+print(d)
+
+## Notice that when we printed d, it kept c as 99, instead of updating.
+
+## eval(expression, globals=None, locals=None)
+## Evaluates the expression as python expression
+## syntax errors reported as exceptions.
+
