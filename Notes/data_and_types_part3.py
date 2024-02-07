@@ -12,3 +12,29 @@ num2 = 30183
 print("max = ", max(num1, num2))
 print("min = ", min(num1, num2))
 
+## Libraries, woo!
+## import libraryName
+## from libraryName import func1, func2
+## import libraryName as mylib
+
+import math
+import random
+
+degrees = float(input("Enter a number: "))
+numOut = math.cos(degrees*math.pi/180)
+print("cosine = ", numOut)
+
+
+## Random Number generator guessing game
+n = random.randrange(1,10)
+guess = int(input("Enter any number between 1 and 10: "))
+while n!= guess:
+    if guess < n:
+        print("Too low!")
+        guess = int(input("Guess another number! "))
+    elif guess > n:
+        print("Too high!")
+        guess = int(input("Guess another number! "))
+    else:
+        break
+print("Good job!")
