@@ -7,7 +7,9 @@
 ## If the triangle is NOT legal, it says so and ends the program.
 ## Otherwise, it resolves perimeter, area, and angles in degrees.
 
-## Heron's Formula: √s(s-a)(s-b)(s-c), where s = semi-perimeter, and a, b, c = side lengths
+## Heron's Formula: √s(s-a)(s-b)(s-c), where s = semi-perimeter,
+## and a, b, c = side lengths
+
 ## This program, given valid side lengths, will return the perimeter,
 ## area, and angles of the triangle
 
