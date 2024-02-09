@@ -52,5 +52,8 @@ def main():
     else:
         print("The given side lengths do not form a valid triangle.")
 
+
+## This down here is just for if I wanna import this as a library and/or
+## if I'm running it from a shell. Not entirely sure, though.
 if __name__ == "__main__":
     main()
