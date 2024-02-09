@@ -3,7 +3,7 @@
 
 ## max(iterable, ...) or max(num1, num2, num3, ...)
 ## separators and end 
-
+import string
 print("hello world", "text file", "goodgrnjsf", sep= '')
 
 num1 = 32.5
@@ -20,12 +20,13 @@ print("min = ", min(num1, num2))
 import math
 import random
 
-degrees = float(input("Enter a number: "))
-numOut = math.cos(degrees*math.pi/180)
-print("cosine = ", numOut)
+## degrees = float(input("Enter a number: "))
+## numOut = math.cos(degrees*math.pi/180)
+## print("cosine = ", numOut)
 
 
 ## Random Number generator guessing game
+randumbgame = '''
 n = random.randrange(1,10)
 guess = int(input("Enter any number between 1 and 10: "))
 while n!= guess:
@@ -38,3 +39,12 @@ while n!= guess:
     else:
         break
 print("Good job!")
+'''
+## phrase = "hello world"
+## new_phrase = ""
+## for c in phrase:
+##     if(c not in string.punctuation):
+##         new_phrase += c
+
+## print(new_phrase)
+
