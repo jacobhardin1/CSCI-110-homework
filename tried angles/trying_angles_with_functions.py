@@ -37,7 +37,7 @@ def main():
     b = float(input("Enter the length of side b: "))
     c = float(input("Enter the length of side c: "))
 
-## Start of program - starts with validity, then does area, perimeter
+## Start of calculations - starts with validity, then does area, perimeter
 ## and angles. Prints everything on separate lines.
     if is_valid_triangle(a, b, c):
         area = calculate_area(a, b, c)
