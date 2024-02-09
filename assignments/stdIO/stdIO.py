@@ -10,7 +10,8 @@ cardOne = r'''---------
 |  \  / |
 |   \/  |
 |      A|
----------'''
+---------
+Ace of Hearts'''
 cardTwo = r'''---------
 |2      |
 |   /\  |
@@ -18,7 +19,8 @@ cardTwo = r'''---------
 |  \  / |
 |   \/  |
 |      2|
----------'''
+---------
+2 of Diamonds'''
 cardThree = r'''---------
 |K      |
 |   O   |
@@ -26,7 +28,8 @@ cardThree = r'''---------
 |  _&_  |
 |       |
 |      K|
----------'''
+---------
+King of Clubs'''
 cardFour = r'''---------
 |7      |
 |   /\  |
@@ -34,7 +37,8 @@ cardFour = r'''---------
 | (____)|
 |   ||  |
 |      7|
----------'''
+---------
+7 of Spades'''
 name = input("Please enter your name: ")
 name = name + "."
 print("Hello, ", name, "Here's a few playing cards. Don't show anyone else your hand!")

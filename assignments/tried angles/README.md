@@ -10,4 +10,8 @@ Math is done using floats, for angle and area calculations.
 Self-eval: 110%
 Self-eval notes: The very first thing the program does is check for triangle validity, by way of adding 2 lines and comparing to the third. It does this 3 times, checking to make sure 2 lines add to be bigger than the third.
 
-TODO: Various clean-ups. Make it look nicer. It's readable, at least. Decide if you really want to define every little section. 
+TODO:
+    Various clean-ups.
+    Make it look nicer. It's readable, at least.
+    Decide if you really want to define every little section.
+    Rename files.
