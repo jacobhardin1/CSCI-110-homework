@@ -46,9 +46,9 @@ def main():
         print("Area of the triangle:", area)
         print("Perimeter of the triangle:", perimeter)
         print("Angles of the triangle (in degrees):")
-        print("Angle A:", angles[0])
-        print("Angle B:", angles[1])
-        print("Angle C:", angles[2])
+        print("Angle A:", angles[0], end='°\n')
+        print("Angle B:", angles[1], end='°\n')
+        print("Angle C:", angles[2], end='°\n')
     else:
         print("The given side lengths do not form a valid triangle.")
 
