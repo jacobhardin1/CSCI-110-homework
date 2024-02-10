@@ -1,3 +1,5 @@
+Homework 1 - stdIO
+
 Program asks for a name, then greets them using said name and prints out 4 cards for them.
 
 Program meets all requirements.
