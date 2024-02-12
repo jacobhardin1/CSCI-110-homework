@@ -1,5 +1,9 @@
+## Functions
+
 import math
 
+
+## Here are a couple defined functions. 
 def main():
     print("hello world.")
     area = calc_area(float(input("Please enter the radius of the circle: ")))
