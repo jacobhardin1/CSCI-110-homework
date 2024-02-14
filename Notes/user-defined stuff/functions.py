@@ -1,5 +1,10 @@
 ## Functions can be defined by the user.
 
+import random
+
+
+names = ["Kyle", "Scott", "John", "Pando"]
+
 def greet():
     name = input("What is your name?")
     if 'john' in name:
@@ -10,6 +15,9 @@ def greet():
         print("Hello, ", name)
     
 
+def randName():
+    rand_name = random.choice(names)
+    return rand_name
 
 def add_two(number1, number2):
     sum = number1 + number2
@@ -23,6 +31,7 @@ def main(): # Usually defined as the beginning of the program
     num1 = int(input("Enter the first number: "))
     num2 = int(input("Enter the second number: "))
     print(add_two(num1, num2))
+    print(randName())
 
 
 
