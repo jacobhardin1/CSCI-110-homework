@@ -11,11 +11,14 @@ Algorithm steps:
 
 import sys
 
-print("Enter a number: ", file=sys.stderr) # Kattis ignores this
+def main():
+    print("Enter a number: ", file=sys.stderr) # Kattis ignores this
 
-number = input()
+    number = input()
 
-num1 = number[0]
-num2 = number[1]
+    num1 = number[0]
+    num2 = number[1]
 
-print(num2+num1)
+    print(num2+num1)
+
+main()
