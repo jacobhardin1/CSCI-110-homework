@@ -14,8 +14,9 @@ def addition(a, b):
     return sum
 
 def main():
-    a = int(input('Enter a number'))
-    b = int(input('Enter a number'))
+    a = int(input())
+    b = int(input())
     print(addition(a, b))
     
 
+main()
