@@ -49,3 +49,14 @@ Definitions of triangles:
     Right - The angle opposite the hypotenuse is exactly 90 degrees.
 
     There is a third python script in Test programs where the validity check doesn't work properly. The generally accepted consensus of a triangle, in mathematics, is listed above in general terms.
+
+
+    Assignment 3 - Functions
+
+    This program does math based on user inputs. First step - ask for inputs. After that, it iterates through several functions sequentially, using the two numbers provided. ALl math is done with floats.
+
+Self-eval: 100%
+Self-eval notes: Could be cleaned up. Otherwise is fine.
+
+TODO:
+    Testing, debugging, etc.
