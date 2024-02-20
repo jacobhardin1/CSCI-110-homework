@@ -18,8 +18,9 @@ def multiply(a, b):
     return mult
 
 def division(a, b):
-    div = a % b
-    return div
+    div = a / b
+    mod = a % b
+    return div, mod
 
 def exponent(a, b):
     exp = a**b
@@ -33,11 +34,17 @@ def sqrt(a, b):
 def main():
    a = float(input("Please enter a number: "))
    b = float(input("Please enter another number: "))
-   print(addition(a, b))
-   print(subtraction(a,b))
-   print(multiply(a, b))
-   print(division(a, b))
-   print(exponent(a, b))
-   print(sqrt(a, b))
+   print("The two numbers provided add up to: ", addition(a, b))
+   print("The difference between the two numbers provided is: ", subtraction(a,b))
+   print("The two numbers provided multiply together to make: ", multiply(a, b))
+   print("The division and remainder of the two numbers is: ", division(a, b))
+   print("The first number raised to the second number is: ", exponent(a, b))
+   print("The square root of each numer is: ", sqrt(a, b))
 
-main()
+while True:
+    main()
+    another = input(r'Another one? yes/no: ')
+    if another == "yes":
+        continue
+    else:
+        break
