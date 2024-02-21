@@ -55,7 +55,7 @@ Definitions of triangles:
 
     This program does math based on user inputs. First step - ask for inputs. After that, it iterates through several functions sequentially, using the two numbers provided. ALl math is done with floats.
 
-Self-eval: 100%
+Self-eval: 110%
 Self-eval notes: Could be cleaned up. Otherwise is fine.
 
 TODO:
