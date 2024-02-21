@@ -42,6 +42,7 @@ def sqrt(a, b):
     rootb = round(math.sqrt(b), 3)
     return roota, rootb
 
+## Finds the larger of two numbers
 def isLarger(a, b):
     if a > b:
         return "The first number is larger."
