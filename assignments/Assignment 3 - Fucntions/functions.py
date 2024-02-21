@@ -60,8 +60,8 @@ def main():
 if __name__ == "__main__":
     while True:
         main()
-        another = input(r'Another one? yes/no: ')
-        if another == "yes":
+        another = input(r'Another one? yes/no: ').lower()
+        if another == "yes" or another == "y":
             continue
         else:
             break
