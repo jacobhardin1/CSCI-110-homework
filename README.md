@@ -32,10 +32,7 @@ Self-eval: 110%
 Self-eval notes: The very first thing the program does is check for triangle validity, by way of adding 2 lines and comparing to the third. It does this 3 times, checking to make sure 2 lines add to be bigger than the third.
 
 TODO:
-    Various clean-ups.
-    Make it look nicer. It's readable, at least.
-    Decide if you really want to define every little section.
-    Rename files.
+    N/A: Program complete.
 
 Definitions of triangles: 
 
@@ -51,4 +48,19 @@ Definitions of triangles:
 
     Right - The angle opposite the hypotenuse is exactly 90 degrees.
 
+<<<<<<< HEAD
     There is a python script in Test programs where the validity check doesn't work properly. The generally accepted consensus of a triangle, in mathematics, is listed above in general terms.
+=======
+    There is a third python script in Test programs where the validity check doesn't work properly. The generally accepted consensus of a triangle, in mathematics, is listed above in general terms.
+
+
+    Assignment 3 - Functions
+
+    This program does math based on user inputs. First step - ask for inputs. After that, it iterates through several functions sequentially, using the two numbers provided. ALl math is done with floats.
+
+Self-eval: 110%
+Self-eval notes: Could be cleaned up. Otherwise is fine.
+
+TODO:
+    Testing, debugging, etc.
+>>>>>>> da0aa14594b8f431ca4c058e6a2855931eae7872

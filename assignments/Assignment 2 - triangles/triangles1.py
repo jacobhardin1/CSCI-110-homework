@@ -1,11 +1,11 @@
 ## Jacob Hardin
 ## Triangles
 ## CSCI 110 Beg. Programming - Python
-## This program uses functions to do funny math-type things to find
-## all the information about a triangle. It first queries the user to
-## give some side lengths. Then, it calculates whether this is a "legal"
-## triangle. If the triangle is NOT legal, it says so and ends the program.
-## Otherwise, it resolves perimeter, area, and angles in degrees.
+## This program finds all the information about a triangle. It first
+## queries the user to give some side lengths. Then, it calculates
+## whether this is a "legal" triangle. If the triangle is NOT legal, it
+## says so and ends the program. Otherwise, it resolves perimeter,
+## area, and angles in degrees.
 
 
 import math
@@ -53,7 +53,5 @@ def main():
         print("The given side lengths do not form a valid triangle.")
 
 
-## This down here is just for if I wanna import this as a library and/or
-## if I'm running it from a shell. Not entirely sure, though.
 if __name__ == "__main__":
     main()
