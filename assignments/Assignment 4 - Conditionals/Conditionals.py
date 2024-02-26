@@ -85,10 +85,13 @@ def main():
 
 test()
 if __name__ == "__main__":
+    i = 0
     while True:
         main()
+        i += 1
         another = input(r'Another one? yes/no: ').lower()
         if another == "yes" or another == "y":
             continue
         else:
+            print("Loops successfully executed: ", i)
             break
