@@ -57,40 +57,41 @@ def test():
     assert smallest(1, 2, 5, -3, 2), -3
     assert smallest(3, 3, 2, 1, 2), 1
 
-
-## Main function - Loops while another == true
+## Main Function - does the things   
 def main():
-    i = 1
-    while True:
-         f = input("What would you like to do? Add/Multiply/Average/Largest/Smallest/All: ").lower()
-         a = int(input())
-         b = int(input())
-         c = int(input())
-         d = int(input())
-         e = int(input())
-         if f == "add":
-            print("The numbers added together is: ", addition(a, b, c, d, e))
-         elif f == "multiply":
-             print("The product of the numbers is: ", product(a, b, c, d, e))
-         elif f == "average":
-             print("The average of the numbers is: ", average(a, b, c, d, e))
-         elif f == "largest":
-             print("The largest number is: ", largest(a, b, c, d, e))
-         elif f == "smallest":
-             print("The smallest number is: ", smallest(a, b, c, d, e))
-         elif f == "all":
-             print("The numbers added together is: ", addition(a, b, c, d, e))
-             print("The product of the numbers is: ", product(a, b, c, d, e))
-             print("The average of the numbers is: ", average(a, b, c, d, e))
-             print("The largest number is: ", largest(a, b, c, d, e))
-             print("The smallest number is: ", smallest(a, b, c, d, e))
-         another = input(r'Another one? yes/no: ').lower()
-         if another == 'yes' or another == 'y':
-             i += 1
-             continue
-         else:
-             print(f'Loop successfully executed {i} times.')
-             break
+    f = input("What would you like to do? Add/Multiply/Average/Largest/Smallest/All: ").lower()
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    d = int(input())
+    e = int(input())
+    if f == "add":
+        print("The numbers added together is: ", addition(a, b, c, d, e))
+    elif f == "multiply":
+        print("The product of the numbers is: ", product(a, b, c, d, e))
+    elif f == "average":
+        print("The average of the numbers is: ", average(a, b, c, d, e))
+    elif f == "largest":
+        print("The largest number is: ", largest(a, b, c, d, e))
+    elif f == "smallest":
+        print("The smallest number is: ", smallest(a, b, c, d, e))
+    elif f == "all":
+        print("The numbers added together is: ", addition(a, b, c, d, e))
+        print("The product of the numbers is: ", product(a, b, c, d, e))
+        print("The average of the numbers is: ", average(a, b, c, d, e))
+        print("The largest number is: ", largest(a, b, c, d, e))
+        print("The smallest number is: ", smallest(a, b, c, d, e))
 
+
+test()
 if __name__ == "__main__":
-    main()
+    i = 0
+    while True:
+        main()
+        i += 1
+        another = input(r'Another one? yes/no: ').lower()
+        if another == "yes" or another == "y":
+            continue
+        else:
+            print("Loops successfully executed: ", i)
+            break
