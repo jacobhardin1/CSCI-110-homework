@@ -59,21 +59,17 @@ def main():
     i = 1
     while True:
          f = input("What would you like to do? Add/Multiply/Average/Largest/Smallest/All: ").lower()
-         a = int(input())
-         b = int(input())
-         c = int(input())
-         d = int(input())
-         e = int(input())
+         a, b, c, d, e = map(int, input().split())
          if f == "add":
-            print("The numbers added together is: ", addition(a, b, c, d, e))
+             print(f"The numbers added together is: {addition(a, b, c, d, e)}")
          elif f == "multiply":
-             print("The product of the numbers is: ", product(a, b, c, d, e))
+             print(f"The product of the numbers is: {product(a, b, c, d, e)}")
          elif f == "average":
-             print("The average of the numbers is: ", average(a, b, c, d, e))
+             print(f"The average of the numbers is: {average(a, b, c, d, e)}")
          elif f == "largest":
-             print("The largest number is: ", largest(a, b, c, d, e))
+             print(f"The largest number is: {largest(a, b, c, d, e)}")
          elif f == "smallest":
-             print("The smallest number is: ", smallest(a, b, c, d, e))
+            print(f"The smallest number is: {smallest(a, b, c, d, e)}")
          elif f == "all":
              print("The numbers added together is: ", addition(a, b, c, d, e))
              print("The product of the numbers is: ", product(a, b, c, d, e))
