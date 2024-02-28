@@ -49,6 +49,7 @@ def main():
                                       "\n The largest number is: " + str(largest(*args)) +
                                       "\n The smallest number is: " + str(smallest(*args)))
 
+## Function to add more rows without breaking things
 def add_entry():
     global entry_row
     if len(entry_list) % 5 == 0:  # Add new row after every 5 entries
@@ -60,13 +61,15 @@ def add_entry():
     new_entry.grid(row=entry_row, column=len(entry_list) % 5)
     entry_list.append(new_entry)
 
+## Creates a window called "Calculator".
 root = tk.Tk()
 root.title("Calculator")
 
-# Input section
+## Input section
 input_frame = tk.Frame(root)
 input_frame.pack(pady=10)
 
+## Creates an entry list
 entry_list = []
 entry_row = 0
 for i in range(5):
@@ -74,21 +77,25 @@ for i in range(5):
     entry.grid(row=entry_row, column=i)
     entry_list.append(entry)
 
+## Adds a button to click for more numbers
 add_button = tk.Button(input_frame, text="More Numbers", command=add_entry)
 add_button.grid(row=entry_row + 1, columnspan=5)
 
+## Initializes a tkinter variable with default value "add".
 choice = tk.StringVar()
 choice.set("add")
 
+## Adds a menu to select operation
 operation_menu = tk.OptionMenu(input_frame, choice, "add", "multiply", "average", "largest", "smallest", "all")
 operation_menu.grid(row=entry_row + 2, columnspan=5)
 
-# Output section
+## Output section
 output_label = tk.Label(root, text="")
 output_label.pack(pady=10)
 
-# Button to execute
+## Button to execute
 execute_button = tk.Button(root, text="Execute", command=main)
 execute_button.pack(pady=5)
 
+## This is what keeps the window open and lets you do stuff.
 root.mainloop()

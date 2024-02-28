@@ -48,13 +48,9 @@ Definitions of triangles:
 
     Right - The angle opposite the hypotenuse is exactly 90 degrees.
 
-<<<<<<< HEAD
     There is a python script in Test programs where the validity check doesn't work properly. The generally accepted consensus of a triangle, in mathematics, is listed above in general terms.
-=======
-    There is a third python script in Test programs where the validity check doesn't work properly. The generally accepted consensus of a triangle, in mathematics, is listed above in general terms.
 
-
-    Assignment 3 - Functions
+ Assignment 3 - Functions
 
     This program does math based on user inputs. First step - ask for inputs. After that, it iterates through several functions sequentially, using the two numbers provided. ALl math is done with floats.
 
@@ -62,5 +58,26 @@ Self-eval: 110%
 Self-eval notes: Could be cleaned up. Otherwise is fine.
 
 TODO:
-    Testing, debugging, etc.
->>>>>>> da0aa14594b8f431ca4c058e6a2855931eae7872
+    N/A - Project complete
+
+
+Assignment 4 - Conditionals
+    Project name: Conditionals.py
+
+    This program does various things to 5 inputs:
+        Addition - adds the numbers together
+        Product - multiplies all the numbers together
+        Average - adds everything and divides by 5
+        Largest - returns the largest number of the inputs
+        Smallest - returns the smallest of the inputted numbers
+    
+    The program can run one, none, or all of the functions described.
+
+    In the Test programs folder is another program called conditionalswindow.py
+    
+    This program takes the previous program and encapsulates it into a separate window, and allows for fewer than or more than 5 numbers. That one is just for fun, to play with a library and see what I can do with it. It DOES use min and max for the smallest/largest numbers.
+
+    TODO: Testing; might change it so it asks for all the numbers on one row.
+
+    Self-Eval: 110%.
+        Notes: Does everything as intended, including a loop function. Loop counter included for fun.
