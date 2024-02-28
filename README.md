@@ -77,7 +77,7 @@ Assignment 4 - Conditionals
     
     This program takes the previous program and encapsulates it into a separate window, and allows for fewer than or more than 5 numbers. That one is just for fun, to play with a library and see what I can do with it. It DOES use min and max for the smallest/largest numbers.
 
-    TODO: Testing; might change it so it asks for all the numbers on one row.
-
     Self-Eval: 110%.
         Notes: Does everything as intended, including a loop function. Loop counter included for fun.
+
+    TODO: Testing; might change it so it asks for all the numbers on one row.
