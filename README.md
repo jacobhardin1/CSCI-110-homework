@@ -80,4 +80,4 @@ Assignment 4 - Conditionals
     Self-Eval: 110%.
         Notes: Does everything as intended, including a loop function. Loop counter included for fun.
 
-    TODO: Testing; might change it so it asks for all the numbers on one row.
+    TODO: Testing
