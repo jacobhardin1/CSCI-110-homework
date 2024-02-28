@@ -13,7 +13,8 @@ def product(*args):
 
 ## Average - adds everything and divides by the number of inputs
 def average(*args):
-    ave = sum(args) / len(args)
+    total = addition(*args)
+    ave = total / len(args)
     return ave
 
 ## Largest - returns the largest number of the inputs
@@ -73,7 +74,7 @@ for i in range(5):
     entry.grid(row=entry_row, column=i)
     entry_list.append(entry)
 
-add_button = tk.Button(input_frame, text="Add", command=add_entry)
+add_button = tk.Button(input_frame, text="More Numbers", command=add_entry)
 add_button.grid(row=entry_row + 1, columnspan=5)
 
 choice = tk.StringVar()
