@@ -51,7 +51,21 @@ def isLarger(a, b):
     else:
         return "Both are the same!"
 
-
+def test():
+    assert addition(3, 3), 6
+    assert addition(4, 7), 11
+    assert subtraction(3, 2), 1
+    assert subtraction(99, 88), 11
+    assert multiply(3, 2), 6
+    assert multiply(22, 22), 484
+    assert division(3, 1), [3, 0]
+    assert division(20, 3), [6.667, 2]
+    assert exponent(3, 3), 27
+    assert exponent(20, 4), 160000
+    assert sqrt(9, 4), [3, 2]
+    assert sqrt(9801, 36), [99, 6]
+    assert isLarger(9, 3), 9
+    assert isLarger(1, 2), 2
 ## Main Function
 ## Asks for two numbers, then prints all of the above defined functions.
 def main():
@@ -67,6 +81,7 @@ def main():
 
 
 ## Sets a loop. If user inputs anything other than "yes", program ends.
+test()
 if __name__ == "__main__":
     while True:
         main()
