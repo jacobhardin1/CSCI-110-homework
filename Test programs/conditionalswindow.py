@@ -59,9 +59,9 @@ def main():
 ## Function to add more rows without breaking things
 def add_entry():
     global entry_row
-    if len(entry_list) % 5 == 0:  # Add new row after every 5 entries
+    if len(entry_list) % 5 == 0:  ## Add new row after every 5 entries
         entry_row += 1
-        # Move the buttons down
+        ## Move the buttons down
         add_button.grid(row=entry_row + 1, columnspan=5)
         operation_menu.grid(row=entry_row + 2, columnspan=5)
     new_entry = tk.Entry(input_frame, width=5)
