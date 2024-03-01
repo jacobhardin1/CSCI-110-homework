@@ -19,11 +19,18 @@ def average(*args):
 
 ## Largest - returns the largest number of the inputs
 def largest(*args):
-    return max(args)
-
+    largest_num = args[0]
+    for num in args[1:]:
+        if num > largest_num:
+            largest_num = num
+    return largest_num
 ## Smallest - returns the smallest of the inputs
 def smallest(*args):
-    return min(args)
+    smallest_num = args[0]  
+    for num in args[1:]:
+        if num < smallest_num:
+            smallest_num = num
+    return smallest_num
 
 ## Main Function - does the things   
 def main():
