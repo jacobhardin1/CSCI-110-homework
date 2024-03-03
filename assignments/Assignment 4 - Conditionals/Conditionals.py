@@ -1,7 +1,7 @@
 ## Jacob Hardin
 ## Conditionals
 ## CSCI 110 Beg. Programming - Python
-## 
+## Math using conditionals
 
 ## Addition - adds the numbers together
 def addition(a, b, c, d, e):
