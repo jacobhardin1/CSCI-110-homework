@@ -71,6 +71,8 @@ def main():
 def test():
     secret_number = generate_secret_number()
     assert 1 <= secret_number <= 20
+    secret_number = generate_secret_number()
+    assert 1 <= secret_number <= 20
 
 
 test()
