@@ -81,3 +81,16 @@ Assignment 4 - Conditionals
         Notes: Does everything as intended, including a loop function. Loop counter included for fun.
 
     TODO: Testing
+
+
+Assignment 5 - Guess The Number
+    file name: numberguess.py
+
+    Basic number guessing game. Range for number generator is 1 to 20. Asks user for name, then runs the game in a While True loop. Regardless of guessing correct number, the game will ask to play again. On a "yes", the game will generate a new random number and prompt user for gameplay action.
+
+    The game also checks for a valid input - outside of range will ask for a non-float number within the range of numbers (1 through 20).
+
+    Self-eval: 110%
+        Eval Notes: Everything works as intended.
+
+    TODO: More bug testing. 
