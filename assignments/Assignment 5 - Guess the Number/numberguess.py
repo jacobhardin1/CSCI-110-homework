@@ -1,5 +1,7 @@
 ## Jacob Hardin
 ## Guess The Number
+## CSCI 110 - Beg. Prog. - Python
+## Number guessing game
 
 ## Random library to get the random number generator
 import random
@@ -29,7 +31,7 @@ def get_player_guess():
         except ValueError:
             print("Please enter a valid number.")
 
-## The game itself - Creates the random number, then sets the attempts to 0.
+## The game - Creates the random number, then sets the attempts to 0.
 def play_game():
     secret_number = generate_secret_number()
     attempts = 0
@@ -68,6 +70,8 @@ def main():
 
 # Assertion tests
 def test():
+    secret_number = generate_secret_number()
+    assert 1 <= secret_number <= 20
     secret_number = generate_secret_number()
     assert 1 <= secret_number <= 20
 
