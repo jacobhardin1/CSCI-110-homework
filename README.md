@@ -95,4 +95,7 @@ Assignment 5 - Guess The Number
     Self-eval: 110%
         Eval Notes: Everything works as intended.
 
-    TODO: More bug testing. 
+    TODO: More bug testing.
+        Bug: when checking for "not yes", "not y" on play again, it would end the prgram if "not yes" was true, even if "y" was false.
+            Fixed: Changed the OR statement to an AND statement.
+        
