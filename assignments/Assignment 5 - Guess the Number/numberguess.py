@@ -64,11 +64,11 @@ def main():
         if not play_game():
             print("Game over!")
         play_again = input("Do you want to play again? (yes/no): ").lower()
-        if play_again != "yes":
+        if play_again != "yes" and play_again != "y":
             print("Thank you for playing!")
             break
 
-# Assertion tests
+## Assertion tests
 def test():
     secret_number = generate_secret_number()
     assert 1 <= secret_number <= 20
@@ -78,6 +78,6 @@ def test():
 
 test()
 
-## Habit - call main if directly playing the game.
+## Habit
 if __name__ == "__main__":
     main()
