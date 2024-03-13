@@ -7,7 +7,6 @@
 import random
 
 
-
 ## Greetings, traveler!
 def greet_player():
     name = input("What's your name? ")
