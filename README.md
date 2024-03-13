@@ -1,5 +1,7 @@
 # homework
 
+NAME - JACOB HARDIN
+
 Homework 1 - stdIO
 
 Program asks for a name, then greets them using said name and prints out 4 cards for them.
