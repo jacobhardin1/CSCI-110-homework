@@ -32,7 +32,7 @@ def get_player_guess():
 
 
 ## The game - Creates the random number, then sets the attempts to 0.
-def play_game(stats:str, secret:int):
+def play_game(stats, secret:int):
     secret_number = secret
     attempts = 0
 
