@@ -1,5 +1,7 @@
 import random
 import os
+from io import StringIO
+import sys
 
 
 ## Greetings, traveler!
@@ -30,8 +32,8 @@ def get_player_guess():
 
 
 ## The game - Creates the random number, then sets the attempts to 0.
-def play_game(stats):
-    secret_number = generate_secret_number()
+def play_game(stats:str, secret:int):
+    secret_number = secret
     attempts = 0
 
     ## Sets loop so that as long as attempts is less than 6, it continues.
@@ -62,13 +64,15 @@ def main(player_name):
     stats = {'times_played': 0, 'times_won': 0, 'times_lost': 0}
     
     while True:
-        if not play_game(stats):
+        secret = generate_secret_number()
+        if not play_game(stats, secret):
             print("Game over!")
         stats['times_played'] += 1
 
         play_again = input("Do you want to play again? (yes/no): ").lower()
         if play_again != "yes" and play_again != "y":
-            print("Thank you for playing!")
+            os.system('cls' if os.name == 'nt' else 'clear')
+            print(f"Thank you for playing, {player_name}!")
             break
         else:
             os.system('cls' if os.name == 'nt' else 'clear')
@@ -80,15 +84,49 @@ def main(player_name):
     print(f"Times lost: {stats['times_lost']}")
 
 ## Assertion tests
-def test():
+def test_greet():
+    ## Greet assertion
+    sys.stdin = StringIO('John\n')
+    assert greet_player() == 'John'
+    sys.stdin = sys.__stdin__
+
+def test_secret():
+    ## Secret number assertion
     secret_number = generate_secret_number()
     assert 1 <= secret_number <= 20
     secret_number = generate_secret_number()
     assert 1 <= secret_number <= 20
 
-test()
+def test_guess():
+    ## Player guessing assertion.
+    sys.stdin = StringIO('10\n')
+    assert get_player_guess() == 10
+    sys.stdin = StringIO('1\n')
+    assert get_player_guess() == 1
+    sys.stdin = StringIO('20\n')
+    assert get_player_guess() == 20
+    sys.stdin = sys.__stdin__
+    
+def test_play_game():
+    fake_input = StringIO('10\n15\n16\n17\n18\n19\n20\n')
+    real_stdin = sys.stdin 
+    sys.stdin = fake_input  
+
+    stats = {'times_played': 0, 'times_won': 0, 'times_lost': 0}
+    assert play_game(stats, 10)
+    assert not play_game(stats, 1)
+
+    sys.stdin = real_stdin
+
+def test():
+    test_greet()
+    test_play_game()
+    test_guess()
+    test_secret()
+
 
 ## Habit
 if __name__ == "__main__":
+    test()
     player_name = greet_player()
     main(player_name)
