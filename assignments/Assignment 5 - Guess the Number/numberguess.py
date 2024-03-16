@@ -108,6 +108,7 @@ def test_guess():
     sys.stdin = sys.__stdin__
     
 def test_play_game():
+    ## Testing gameplay
     fake_input = StringIO('10\n15\n16\n17\n18\n19\n20\n')
     real_stdin = sys.stdin 
     sys.stdin = fake_input  
@@ -119,6 +120,7 @@ def test_play_game():
     sys.stdin = real_stdin
 
 def test():
+    ## Running all the tests
     test_greet()
     test_play_game()
     test_guess()
