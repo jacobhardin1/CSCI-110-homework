@@ -92,10 +92,12 @@ Assignment 5 - Guess The Number
 
     The game also checks for a valid input - outside of range will ask for a non-float number within the range of numbers (1 through 20).
 
+    The game ALSO clears the terminal fairly frequently.
+
     Self-eval: 110%
         Eval Notes: Everything works as intended.
 
-    TODO: More bug testing.
+    TODO: None
         Bug: when checking for "not yes", "not y" on play again, it would end the prgram if "not yes" was true, even if "y" was false.
             Fixed: Changed the OR statement to an AND statement.
         
