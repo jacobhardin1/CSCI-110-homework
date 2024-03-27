@@ -101,3 +101,19 @@ Assignment 5 - Guess The Number
         Bug: when checking for "not yes", "not y" on play again, it would end the prgram if "not yes" was true, even if "y" was false.
             Fixed: Changed the OR statement to an AND statement.
         
+
+
+Assignment 6 - Avion Kattis Problem
+    file names:
+        avion1.py
+        avion.png
+        avionkattis.png
+    
+    See source problem here:
+        https://open.kattis.com/problems/avion
+
+    Finds blimps based on string inputs
+
+    Self-eval: 100%
+
+    TODO: Nothing

@@ -3,7 +3,10 @@ Jacob Hardin
 3/25/24
 Kattis Problem: https://open.kattis.com/problems/avion
 Logical Steps:
-1. 
+1. Accept inputs
+2. Find CIA Blimps!
+3. Return list location of each blimp
+4. If no CIA Blimps, return "HE GOT AWAY!"
 
 
 '''
